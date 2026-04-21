@@ -6,3 +6,22 @@ Você foi encarregado de desenvolver o back-end de uma aplicação colaborativa 
 # Criacao do projeto
 # npm init -y
 # irá criar arquivo de configuração inicial package.json  
+// Estrutura de pastas do projeto
+collaborative-notes/
+├── src/
+│   ├── config/
+│   │   └── database.js        # Conexão com MongoDB
+│   ├── middleware/
+│   │   └── auth.js            # Middleware de autenticação
+│   ├── models/
+│   │   ├── User.js            # Model do usuário
+│   │   └── Note.js            # Model da nota
+│   ├── routes/
+│   │   ├── auth.js            # Rotas de autenticação
+│   │   └── notes.js           # Rotas CRUD de notas
+│   ├── sockets/
+│   │   └── noteSocket.js      # Eventos em tempo real
+│   └── app.js                 # Servidor principal
+├── .env                       # Variáveis de ambiente
+├── package.json
+└── README.md
